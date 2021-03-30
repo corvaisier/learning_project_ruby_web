@@ -10,7 +10,7 @@ class Router
   def call(env)
     path = env["REQUEST_PATH"]
 
-    par = Rack::Request.new(env).params
+    param = Rack::Request.new(env)
     panier ||= Panier.new
     entre_client ||= EntreeClient.new
     reduction ||= Reduction.new
@@ -26,8 +26,8 @@ class Router
         meles: panier.accu_meles
       )]
     when "/traitement"
-      p "ananan : #{par}" 
-      #@product = params.POST()["fruit"]
+      #p "ananan : #{par}" 
+      @product = param.POST["fruit"]
       #p @product
       #puts params.values[0]
       #fruit : entre_client.entree(params[value[0]])
