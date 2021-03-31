@@ -18,3 +18,5 @@ gem "rack"
 gem "thin"
 #database interface
 gem "sqlite3"
+
+gem "nokogiri"

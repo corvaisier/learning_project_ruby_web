@@ -15,7 +15,7 @@ class Controller
     reduction = Reduction.instance
     client_interraction = ClientInterraction.instance
     template = Tilt.new("./vues/index.html.erb")
-    
+
     if param != nil
       entre_client.entree(param).each do |args|
         panier.add_fruits(args)

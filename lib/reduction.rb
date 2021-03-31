@@ -1,7 +1,7 @@
 require "./db/database.rb"
 require "pry"
-class Reduction
 
+class Reduction
   def initialize
     @catalogue = Dbase::catalogue
   end
