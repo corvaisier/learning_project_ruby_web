@@ -3,6 +3,7 @@ class Panier
   def self.instance
     @panier ||= Panier.new
   end
+
   def initialize
     @total = 0
     @accu_cerises = 0

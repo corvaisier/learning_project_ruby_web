@@ -16,3 +16,5 @@ gem "erb"
 gem "rack"
 # Ruby web server
 gem "thin"
+#database interface
+gem "sqlite3"

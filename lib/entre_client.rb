@@ -3,6 +3,7 @@ class EntreeClient
   def self.instance
     @entre_client ||= EntreeClient.new
   end
+
   def initialize
     @all_args = []
   end
@@ -10,7 +11,7 @@ class EntreeClient
   def entree(argument)
     return "oups" if argument == "quit"
     if argument != nil
-      @all_args = argument.split(", ") 
+      @all_args = argument.split(", ")
     end
   end
 end

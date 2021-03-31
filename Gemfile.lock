@@ -27,6 +27,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
+    sqlite3 (1.4.2)
     thin (1.8.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -42,6 +43,7 @@ DEPENDENCIES
   pry
   rack
   rspec
+  sqlite3
   thin
   tilt
 
