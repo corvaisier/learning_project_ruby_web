@@ -1,6 +1,6 @@
 <p>Youpi!!!</p>
 
-<form action="/traitement" method="post">
+<form action="/" method="post">
   <div>
     <input type="text" name="fruit" id="fruit" required>
   </div>
@@ -9,7 +9,8 @@
     <input type="submit" value="entrez votre fruit!">
   </div>
 </form>
-
+<%="entree : #{@product}" %><br>
+<%="total : #{@price}" %><br>
 
 <%= "pommes : #{pommes}"%><br>
 <%= "bananes : #{bananes}"%><br>

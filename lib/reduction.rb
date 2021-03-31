@@ -1,6 +1,9 @@
 require "./lib/catalogue.rb"
 
 class Reduction
+  def self.instance
+    @reduction ||= Reduction.new
+  end
   def calcule_price_after_reduction(args, panier)
     panier.total += PRODUCTS[args] - reduction(args, panier)
   end

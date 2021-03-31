@@ -1,6 +1,8 @@
 class Panier
   attr_accessor :total, :accu_cerises, :accu_bananes, :accu_meles, :accu_pommes
-
+  def self.instance
+    @panier ||= Panier.new
+  end
   def initialize
     @total = 0
     @accu_cerises = 0

@@ -1,13 +1,16 @@
 class EntreeClient
   attr_accessor :all_args
-
+  def self.instance
+    @entre_client ||= EntreeClient.new
+  end
   def initialize
     @all_args = []
   end
 
   def entree(argument)
-    argument = argument.chomp
     return "oups" if argument == "quit"
-    @all_args = argument.split(", ")
+    if argument != nil
+      @all_args = argument.split(", ") 
+    end
   end
 end
