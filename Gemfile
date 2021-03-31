@@ -16,7 +16,7 @@ gem "erb"
 gem "rack"
 # Ruby web server
 gem "thin"
-#database interface
+#database interface 
 gem "sqlite3"
 
 gem "nokogiri"

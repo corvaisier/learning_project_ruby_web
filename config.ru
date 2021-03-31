@@ -6,5 +6,5 @@ load "router.rb"
 handler = Rack::Handler::Thin
 handler.run(
   Router.new,
-  Port: 4200,
+  Port: 4200
 )

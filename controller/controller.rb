@@ -16,7 +16,7 @@ class Controller
     client_interraction = ClientInterraction.instance
     template = Tilt.new("./vues/index.html.erb")
 
-    if param != nil
+    if !param.nil?
       entre_client.entree(param).each do |args|
         panier.add_fruits(args)
         reduction.calcule_price_after_reduction(args, panier)
@@ -28,7 +28,7 @@ class Controller
       pommes: panier.accu_pommes,
       bananes: panier.accu_bananes,
       cerises: panier.accu_cerises,
-      meles: panier.accu_meles,
+      meles: panier.accu_meles
     )]
   end
 

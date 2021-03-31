@@ -10,7 +10,7 @@ class EntreeClient
 
   def entree(argument)
     return "oups" if argument == "quit"
-    if argument != nil
+    if !argument.nil?
       @all_args = argument.split(", ")
     end
   end
