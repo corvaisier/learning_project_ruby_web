@@ -13,9 +13,9 @@ class Panier
   end
 
   def add_fruits(args)
-    @accu_cerises += 1 if args == "cerises"
-    @accu_bananes += 1 if args == "bananes"
-    @accu_meles += 1 if args == "meles"
-    @accu_pommes += 1 if args == "pommes"
+    @accu_cerises += 1 if args == "Cerises"
+    @accu_bananes += 1 if args == "Bananes"
+    @accu_meles += 1 if args == "Meles"
+    @accu_pommes += 1 if args == "Pommes"
   end
 end
