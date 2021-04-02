@@ -5,7 +5,7 @@ class Reduction
   def initialize
     @catalogue = Dbase::catalogue
   end
-
+    attr_accessor :catalogue
   def self.instance
     @reduction ||= Reduction.new
   end

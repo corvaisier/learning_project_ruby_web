@@ -9,9 +9,13 @@ class EntreeClient
   end
 
   def entree(argument)
+    #binding.pry
+
     return "oups" if argument == "quit"
     if !argument.nil?
-      @all_args = argument.split(", ")
+
+      @all_args = [argument["fruit"]].flatten
+      #binding.pry
     end
   end
 end

@@ -13,11 +13,17 @@ class Router
 
   def call(env)
     path = env["REQUEST_PATH"]
-    param = Rack::Request.new(env)
-    controller.param = param.POST["fruit"]
+    req = Rack::Request.new(env)
+    body = req.body.gets
+    params = {}
+    params.merge!(body ? JSON.parse(body) : {})
+    controller.param = params
+
     case path
     when "/"
       controller.index
+    when "/baba"
+      controller.json
     else
       controller.error
     end
