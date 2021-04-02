@@ -1,10 +1,7 @@
 require "tilt"
 require "erb"
 require "./controller/controller.rb"
-require "./lib/panier.rb"
-require "./lib/entre_client.rb"
-require "./lib/reduction.rb"
-require "./lib/client_interraction.rb"
+
 
 class Router
   def controller
